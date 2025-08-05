@@ -12,12 +12,12 @@ header, footer{
 }
 section{
     background-color: seagreen;
-    padding: 1rem;
+    padding: 10rem;
 }
 .blue-box{ 
     background-color: darkslategray;
     color: white;
-    padding: 1rem;
+    padding: 2rem;
 }
 main{
     padding: 1rem;
