@@ -6,16 +6,16 @@
 }
 
 header, footer{
-    background-color: aqua;
+    background-color: rgb(25, 78, 78);
     padding: 2rem;
     text-align: center;
 }
 section{
-    background-color: seagreen;
+    background-color: rgb(137, 117, 184);
     padding: 10rem;
 }
 .blue-box{ 
-    background-color: darkslategray;
+    background-color: rgb(33, 37, 37);
     color: white;
     padding: 2rem;
 }
