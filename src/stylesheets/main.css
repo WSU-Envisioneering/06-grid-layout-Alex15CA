@@ -1,1 +1,73 @@
 /* Your styles go here */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer{
+    background-color: aqua;
+    padding: 2rem;
+    text-align: center;
+}
+section{
+    background-color: seagreen;
+    padding: 1rem;
+}
+.blue-box{ 
+    background-color: darkslategray;
+    color: white;
+    padding: 1rem;
+}
+main{
+    padding: 1rem;
+    display: grid;
+  /*  grid-template-columns: 1fr 1fr; */
+    grid-template-rows: 40vh 40vh;
+   
+    grid-template-areas: 
+    "main main"
+
+    "link aside";
+    gap: .5rem;
+    
+}
+section:first-child{
+grid-column: 1/ span 2;
+height: 40vh;
+
+}
+
+.aside-links{
+    display:grid;
+    gap: 2rem;
+}
+@media all and (min-width:600px){
+   
+    }
+    nav{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .aside-links{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "link1 link2"
+        "link3 link4";
+    }
+
+    @media all and (min-width: 900px){
+        main{
+            grid-template-areas: 
+            "link1 link2"
+            "link3 link4";
+        }
+        section:first-child{
+            grid-column:1/ span 1;
+            grid-row: 1/ span 1;
+        }
+        section:last-child{
+            grid-column: 2/ span 1;
+            grid: 2/ span 1;
+        }
+    }
